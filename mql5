@@ -1,0 +1,102 @@
+
+// Program: UPD1 Trade Panel Friendly MT4
+// Developer's Site: forexroboteasy.com
+// Developer: Forex Robot Easy Team
+
+// Compatibility with any account and currency in the MT4 terminal
+bool checkAccountCompatibility()
+{
+    // Check account compatibility code here
+    return true;
+}
+
+// Support for 4K screen resolution and zoom
+void setScreenResolution()
+{
+    // Set screen resolution and zoom code here
+}
+
+// Choice between two color themes (black and white) based on user preference
+enum ColorTheme { Black, White };
+
+void setColorTheme(ColorTheme theme)
+{
+    // Set color theme code here based on user preference
+}
+
+// Four types of panel layouts that can fold into a small button
+enum PanelLayout { Layout1, Layout2, Layout3, Layout4 };
+
+void setPanelLayout(PanelLayout layout)
+{
+    // Set panel layout code here
+}
+
+// Preset orders function
+void executePresetOrder()
+{
+    // Execute preset orders code here for efficient trading
+}
+
+// Automatic lot calculation function
+void calculateLotSize()
+{
+    // Calculate lot size code here based on predefined risk parameters
+}
+
+// Risk Control function
+void manageRisk()
+{
+    // Manage and mitigate risks effectively code here
+}
+
+// Main function
+int OnInit()
+{
+    // Check account compatibility
+    if (!checkAccountCompatibility())
+    {
+        Print('Account not compatible!');
+        return INIT_FAILED;
+    }
+
+    // Set screen resolution and zoom
+    setScreenResolution();
+
+    // Set color theme
+    setColorTheme(Black);
+
+    // Set panel layout
+    setPanelLayout(Layout1);
+
+    // Execute preset orders
+    executePresetOrder();
+
+    // Calculate lot size
+    calculateLotSize();
+
+    // Manage risk
+    manageRisk();
+
+    return INIT_SUCCEEDED;
+}
+
+void OnDeinit(const int reason)
+{
+    // Clean up and release resources
+}
+
+void OnTick()
+{
+    // Trading logic code here
+}
+
+void OnTimer()
+{
+    // Timer code here
+}
+
+void OnChartEvent(const int id, const long& lparam, const double& dparam, const string& sparam)
+{
+    // Chart event code here
+}
